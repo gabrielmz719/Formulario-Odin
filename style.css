@@ -4,22 +4,30 @@
   font-weight: normal;
   font-style: normal;
 }
+body{
+    margin: 0;
+    padding:0;
+    font-family: roboto;
+}
 .form-group{
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     flex: 1;
 }
-.form-group input{
-    width: 70%;
-    border-color: #E5E7EB;
+.form-group input {
+  width: 70%;
+  border: 1px solid #E5E7EB; 
 }
-.form-group input:invalid{
+.form-group .lado-esquerdo:focus {
+  border: 1px solid rgb(4, 0, 255); 
+}
+.form-group .form-password:invalid{
    border: red solid 1px;
 }
 .caixa{
     padding: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
 }
 .caixa .botao-forms{
     width: 11rem;
@@ -89,4 +97,9 @@
 
 span{
     display: block;
+}
+span a {
+    color: #596D48;
+    text-decoration: none;
+    font-size: large;
 }

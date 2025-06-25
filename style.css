@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Norse Bold';
+  src: url('./fonts/Norse-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 .form-group{
     margin-bottom: 1rem;
     display: flex;
@@ -6,6 +12,10 @@
 }
 .form-group input{
     width: 70%;
+    border-color: #E5E7EB;
+}
+.form-group input:invalid{
+   border: red solid 1px;
 }
 .caixa{
     padding: 10px;
@@ -14,11 +24,12 @@
 .caixa .botao-forms{
     width: 11rem;
     height: 2rem;
-    margin: 0 0 0 0;
+    margin: 0 0 20px 0;
     background-color: #596D48;
     color: #fff;
     font-size: 17px;
     border-radius: 6px;
+    border-style: none;
 }
 .form-linha{
     display: flex;
@@ -45,7 +56,8 @@
     height: auto;  
 }
 .retangulo h1{
-    font-size: 70px;
+    font-size: 4rem;
+    font-family: 'Norse Bold', sans-serif;
 }
 .retangulo{
     position: absolute;
